@@ -1,0 +1,16 @@
+version: '3.8'
+
+services:
+  prometheus:
+    image: 'prom/prometheus'
+    ports:
+      - '9090:9090'
+    # volumes:
+    #   - 'cassandra_data:/bitnami'
+    # environment:
+    #   - CASSANDRA_SEEDS=cassandra
+    #   - CASSANDRA_PASSWORD_SEEDER=yes
+    #   - CASSANDRA_PASSWORD=cassandra
+# volumes:
+#   cassandra_data:
+#     driver: local
